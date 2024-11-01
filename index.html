@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Video Sync</title>
+</head>
+<body>
+    <div class="container">
+        <video id="video" src="your-video-file.mp4" preload="metadata" controls></video>
+    </div>
+    <div class="code-input">
+        <input type="text" id="code" placeholder="Enter 'left' or 'right'">
+        <button id="join">Join</button>
+    </div>
+    <div class="controls">
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

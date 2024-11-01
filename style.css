@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Allow absolute positioning */
+}
+
+video {
+    width: 200%; /* Set video width to 200% to accommodate both halves */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position it absolutely */
+}
+
+/* Styles to show only half the video */
+.left {
+    left: 0; /* Show the left half */
+}
+
+.right {
+    left: -100%; /* Move the right half off the screen */
+}
+
+.code-input {
+    margin-top: 20px;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+/* Button styles */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
